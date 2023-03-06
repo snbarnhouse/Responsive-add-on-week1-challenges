@@ -18,6 +18,13 @@
         grid-template-columns: 2fr 1fr;
       }
 
+      .challenge3 {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 2fr 1fr);
+      }
+
       .box {
         background-color: blueviolet;
         color: white;
@@ -60,7 +67,7 @@
       Display the following boxes into a grid of 2 equal columns where the first
       row takes twice the amount of space than the second row
     </p>
-    <div>
+    <div class="challenge3">
       <div class="box">1</div>
       <div class="box">2</div>
       <div class="box">3</div>
