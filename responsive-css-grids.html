@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive CSS Grids</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 900;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+      }
+
+      h1 h2,
+      h3 {
+        color: #231d3c;
+      }
+
+      .box {
+        background-color: blueviolet;
+        color: white;
+        display: flex;
+        font-size: 13px;
+        border-radius: 8px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .grid-challenge-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .grid-challenge-2 {
+        grid-gap: 10px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+
+      .grid-challenge-3 {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 2fr 1fr);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive CSS Grids</h1>
+
+    <h3>Challenge 1</h3>
+    <p>
+      Turn this grid into a 1 column grid on mobile devices (less than 900px)
+    </p>
+    <div class="grid-challenge-1">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+    <h3>Challenge 2</h3>
+    <p>
+      Turn this grid into a 2 equal column grid on mobile devices (less than
+      900px)
+    </p>
+    <div class="grid-challenge-2">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <h3>Challenge 3</h3>
+    <p>
+      Turn this grid into a 1 column grid with equal rows on mobile devices
+      (less than 900px)
+    </p>
+    <div class="grid-challenge-3">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+    </div>
+  </body>
+</html>
