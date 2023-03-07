@@ -26,9 +26,24 @@
     }
 
     .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("woman.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       border: 1px solid lightgrey;
       padding: 60px;
       text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      .h1 {
+        font-size: 24px;
+      }
+      .paragraph {
+        display: none;
+      }
     }
   </style>
   <body>
@@ -50,9 +65,9 @@
       Hide the paragraph on mobile devices and make the font of the h1 smaller
     </p>
     <header class="hero">
-      <h1>Welcome to SheCodes</h1>
+      <h1 class="h1">Welcome to SheCodes</h1>
       <h2>Coding workshops for women</h2>
-      <p>Access a new career in tech</p>
+      <p class="paragraph">Access a new career in tech</p>
     </header>
   </body>
 </html>
