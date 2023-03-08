@@ -24,8 +24,18 @@
         color: #231d3c;
       }
 
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
       .video {
         width: 100%;
+        aspect-ratio: 16 / 9;
+      }
+
+      .map {
+        max-width: 100%;
         aspect-ratio: 16 / 9;
       }
     </style>
@@ -35,6 +45,7 @@
 
     <h3>Challenge 1</h3>
     <p>Embed any YouTube video below</p>
+    <div class="container">
     <iframe
       width="560"
       height="315"
@@ -44,8 +55,10 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
+</div>
     <h3>Challenge 2</h3>
     <p>Embed another YouTube video and make sure it's responsive</p>
+    <div class="container">
     <iframe
       class="video"
       src="https://www.youtube.com/embed/05dH7qnhLsg"
@@ -54,9 +67,19 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
+</div>
     <h3>Challenge 3</h3>
     <p>
       Embed a media from any website (other than YouTube) and make it responsive
     </p>
+    <div class="container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13059.302601217461!2d-78.90513448289525!3d35.086088796148694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ab6cdd776804ed%3A0x86b64526d0eabd4e!2sCross%20Creek%20Early%20College%20High!5e0!3m2!1sen!2sus!4v1678290545590!5m2!1sen!2sus"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" class="map" width="600" height="450"
+    ></iframe>
+</div>
   </body>
 </html>
