@@ -23,6 +23,16 @@
       h3 {
         color: #231d3c;
       }
+
+      .container1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .container2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     </style>
   </head>
   <body>
@@ -32,5 +42,14 @@
       Create a responsive grid with 5 YouTube videos, the first row should have
       2 columns and the second row should have 3 columns
     </p>
+    <div class="container1">
+      <div class="video">video</div>
+      <div class="video">video</div>
+    </div>
+    <div class="container2">
+      <div class="video">video</div>
+      <div class="video">video</div>
+      <div class="video">video</div>
+    </div>
   </body>
 </html>
