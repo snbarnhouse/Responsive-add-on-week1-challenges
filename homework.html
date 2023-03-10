@@ -27,13 +27,13 @@
       .container1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
+        grid-gap: 10px;
       }
 
       .container2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 5px;
+        grid-gap: 10px;
       }
 
       .responsive-video {
@@ -42,7 +42,11 @@
       }
 
       @media (max-width: 900px) {
-
+        .container1,
+        .container2 {
+          grid-template-columns: 1fr;
+          grid-gap: 5px;
+        }
       }
     </style>
   </head>
@@ -62,7 +66,8 @@
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen class="responsive-video"
+          allowfullscreen
+          class="responsive-video"
         ></iframe>
       </div>
       <div class="video">
@@ -73,7 +78,8 @@
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen class="responsive-video"
+          allowfullscreen
+          class="responsive-video"
         ></iframe>
       </div>
     </div>
@@ -86,7 +92,8 @@
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen class="responsive-video"
+          allowfullscreen
+          class="responsive-video"
         ></iframe>
       </div>
       <div class="video">
@@ -97,7 +104,8 @@
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen class="responsive-video"
+          allowfullscreen
+          class="responsive-video"
         ></iframe>
       </div>
       <div class="video">
@@ -108,7 +116,8 @@
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen class="responsive-video"
+          allowfullscreen
+          class="responsive-video"
         ></iframe>
       </div>
     </div>
